@@ -1,0 +1,17 @@
+#!/bin/sh
+
+echo 'Please enter the user name:'
+read -p "Username: " user
+echo 'Please enter your password:'
+read -p "Password: " pass
+
+echo $user
+echo $pass
+
+while [ $user != 'APNew' ] || [ $pass != 'APNew' ] ; do
+      echo 'The username or password is incorrect'
+      read -p "Username: " user
+      read -p "Password: " pass
+done
+
+
